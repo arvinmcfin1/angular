@@ -15,7 +15,8 @@ export class UsersComponent implements OnInit {
       email: 'email1@prova.it',
       fiscalcode: '123456',
       province: 'Provincia1',
-      phone: '123'
+      phone: '123',
+      age: 12
     },
     {
       name: 'Nome2',
@@ -23,7 +24,8 @@ export class UsersComponent implements OnInit {
       email: 'email2@prova.it',
       fiscalcode: '123456',
       province: 'Provincia2',
-      phone: '123'
+      phone: '123',
+      age: 13
     },
     {
       name: 'Nome3',
@@ -31,7 +33,8 @@ export class UsersComponent implements OnInit {
       email: 'email3@prova.it',
       fiscalcode: '123456',
       province: 'Provincia3',
-      phone: '123'
+      phone: '123',
+      age: 14
     }
   ];
 
