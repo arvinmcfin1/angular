@@ -1,0 +1,21 @@
+<h1>User Management System</h1>
+
+<table>
+  <caption>{{title}}</caption>
+  <tr>
+    <th>Nome</th>
+    <th>Cognome</th>
+    <th>Codice Fiscale</th>
+    <th>E-mail</th>
+    <th>Telefono</th>
+    <th>Provincia</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.name}}</td>
+    <td>{{user.lastname}}</td>
+    <td>{{user.fiscalcode}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.phone}}</td>
+    <td>{{user.province}}</td>
+  </tr>
+</table>
