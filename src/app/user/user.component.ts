@@ -1,3 +1,4 @@
+import { UserService } from './../users/user.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,13 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
   @Input('data-user') user;
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
   }
 
   deleteUser() {
-    alert(this.user.lastname);
+    this.userService.deleteUser(this.user);
   }
 
 }
