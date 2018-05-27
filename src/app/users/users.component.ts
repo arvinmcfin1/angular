@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
-  title = 'User';
+  title = 'Users';
   users = [];
 
   constructor(private service: UserService) {
-    this.users = service.getUsers();
   }
 
   ngOnInit() {
+    this.users = this.service.getUsers();
   }
 
 }
