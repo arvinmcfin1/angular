@@ -12,14 +12,14 @@ export class UsersComponent implements OnInit {
   title = 'Users';
   users: User[] = [];
 
-  constructor(private service: UserService) {
+  constructor(private userService: UserService) {
   }
 
   ngOnInit() {
-    this.users = this.service.getUsers();
+    this.users = this.userService.getUsers();
   }
   onDeleteUser(user: User) {
-    alert(user.lastname);
+    this.userService.deleteUser(user);
   }
 
 }
