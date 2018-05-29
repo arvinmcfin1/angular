@@ -1,8 +1,9 @@
+import { User } from './../interfaces/user';
 import { Injectable } from '@angular/core';
 
 @Injectable()
 export class UserService {
-    users = [
+    users: User[] = [
         {
             name: 'Nome1',
             lastname: 'Cognome1',
